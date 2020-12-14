@@ -1,8 +1,14 @@
 body {
-  background-color: lightblue;
+  background-color: #e6e6e6;
 }
 
 h1 {
   color: navy;
   margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
