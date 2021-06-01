@@ -54,13 +54,13 @@ function getCookie(name) {
 function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';
 }
-function dataLayerPusher(){
-dataLayer.push({"event": "eventGA","eventCategory" : "data1","eventAction" : "data-1-click","eventLabel" : "yes"})	
+function dataLayerPusher() {
+dataLayer.push({"event": "eventGA","eventCategory" : "data1","eventAction" : "data-1-click","eventLabel" : "yes"});	
 }
 
 function cookieConsent() {
   if (!getCookie('purecookieDismiss')) {
-    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss()"; onclick="dataLayerPusher()"/> + purecookieButton + '</a></div></div>';
+    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onclick="purecookieDismiss()"; onclick="dataLayerPusher()"/> + purecookieButton + '</a></div></div>';
 	pureFadeIn("cookieConsentContainer");
   }
 }
