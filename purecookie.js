@@ -60,7 +60,7 @@ dataLayer.push({"event": "eventGA","eventCategory" : "data1","eventAction" : "da
 
 function cookieConsent() {
   if (!getCookie('purecookieDismiss')) {
-    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onclick="purecookieDismiss()"; onclick="dataLayerPusher()"/> + purecookieButton + '</a></div></div>';
+    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onclick="purecookieDismiss()"; onclick="dataLayerPusher()"/> + purecookieButton + /a></div></div>';
 	pureFadeIn("cookieConsentContainer");
   }
 }
