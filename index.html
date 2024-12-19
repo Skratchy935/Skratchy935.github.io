@@ -24,13 +24,30 @@ function OptanonWrapper() { }
 
 <script> 	 
     var dataLayer = dataLayer || []; 
-    dataLayer.push({ 
-        "event": "[{'car.ModelBody': '123','321'},{'carModelBody': '421',564}]", 
-	"importer.BID": 442, 
-	"page.LanguageVersion": "da-dk", 
-	"page.name": document.title, 
-	"web.environment": "" 
-    }); 
+window.dataLayer.push({
+  event: 'purchase',
+  ecommerce: {
+    currency: 'EUR',
+    value: 116.47,
+    transaction_id: 'p115-20202000',
+    items: [{
+      item_name: 'Finnish magical parka',
+      item_id: 'mp1122',
+      price: '31.10',
+      item_brand: 'PARKA4LIFE',
+      item_category: 'Apparel',
+      item_variant: 'Navy blue',
+      quantity: '3'
+    },{
+      item_name: 'Parka stain removal',
+      item_id: 'psr1332',
+      price: '5.99',
+      item_brand: 'PARKA4LIFE',
+      quantity: '1',
+      item_coupon: 'cheap_stain_removal'
+    }]
+  }
+});
 </script>
 </head>
 <body>
